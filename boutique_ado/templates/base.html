@@ -39,7 +39,7 @@
             </script>
         {% endblock %}
 
-        {% block exrta_js %}
+        {% block extra_js %}
         {% endblock %}
 
         <title>Boutique Ado {% block extra_title %}{% endblock %} </title>
@@ -54,6 +54,13 @@
         <div class="message-container"></div>
         {% endif %}
         
-    </body>
+        {% block page_header %}
+        {% endblock %}
 
+        {% block content %}
+        {% endblock %}
+
+        {% block postloadjs %}
+        {% endblock %}
+    </body>
 </html>
